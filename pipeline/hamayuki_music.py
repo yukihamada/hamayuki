@@ -78,6 +78,7 @@ CSS = """<style>
 .hy-chap .tm{font-variant-numeric:tabular-nums;color:var(--dim,#9a9a9f);min-width:3.2em}
 .hy-more summary{cursor:pointer;min-height:44px;display:flex;align-items:center;color:var(--gold,#c9a962);font-size:13.5px;list-style:none}
 .hy-more summary::-webkit-details-marker{display:none}
+.hy-gh a{color:var(--gold,var(--sun,#c9a962));text-decoration:underline;text-underline-offset:3px;display:inline-flex;align-items:center;min-height:44px;margin:-12px 0}
 </style>"""
 
 def snippet(lang, mix_minutes=None, h='h3', show=8):
@@ -96,9 +97,12 @@ def snippet(lang, mix_minutes=None, h='h3', show=8):
     files = _json.dumps([BASE + f for f in s01['files']])
     # waveform player: /hamayuki/wave.js (+ /hamayuki/peaks.json from
     # pacifica-dance/scripts/build-hamayuki-peaks.py). Native <audio> stays as no-JS fallback.
-    js = '<script src="/hamayuki/wave.js?v=1" defer></script>'
+    js = '<script src="/hamayuki/wave.js?v=2" defer></script>'
     n = len(TRACKS)
+    gh = {'ja': '制作過程（曲の指示文・マスタリングとミックスのコード・波形プレーヤー）は <a href="https://github.com/yukihamada/hamayuki" target="_blank" rel="noopener noreferrer">GitHub</a> で公開しています。',
+          'en': 'The full making-of (track prompts, mastering and mix code, the waveform player) is public on <a href="https://github.com/yukihamada/hamayuki" target="_blank" rel="noopener noreferrer">GitHub</a>.'}[lang]
     return (CSS + f'<p class="hy-sub" style="margin:0 0 12px">{e(x["role"])}</p>' +
+            f'<p class="hy-sub hy-gh" style="margin:-4px 0 14px">{gh}</p>' +
             f'<div class="hy-mix hy-s01"><b>{e(x["s01"])}</b><p>{e(x["s01_sub"].format(n=n, m=s01["minutes"]))}</p>'
             f'<audio controls preload="none" src="{BASE}{s01["files"][0]}"></audio><div class="hy-parts">{parts}</div>' + chap + '</div>'
             f'<div class="hy-mix"><b>{e(MIX[1])}</b><p>{e(x["mix00_sub"].format(m=m00))}</p>'

@@ -50,12 +50,17 @@
     '.wv-meta{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}',
     '.wv-now{font-size:14.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}',
     '.wv-now small{color:var(--dim,var(--mute,#9a9a9f));font-size:12px;margin-right:6px;letter-spacing:.04em}',
+    '.wv-nx{align-self:flex-start;font:inherit;font-size:12.5px;color:var(--dim,var(--mute,#9a9a9f));background:none;border:0;padding:0;margin:-10px 0;min-height:44px;cursor:pointer;text-align:left;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}',
+    '.wv-nx:hover{color:var(--gold,var(--sun,#c9a962))}',
     '.wv-time{font-size:12.5px;color:var(--dim,var(--mute,#9a9a9f));font-variant-numeric:tabular-nums}',
     '.wv-c{position:relative;height:96px;cursor:pointer;touch-action:pan-y;border-radius:8px;-webkit-tap-highlight-color:transparent}',
     '.wv-c canvas{display:block;width:100%;height:100%}',
-    '.wv-tip{position:absolute;top:-6px;transform:translate(-50%,-100%);background:var(--bg-2,var(--bg,#111));border:1px solid var(--line,#2a2a2e);border-radius:6px;padding:3px 8px;font-size:12px;white-space:nowrap;pointer-events:none;opacity:0;transition:opacity .12s;font-variant-numeric:tabular-nums;max-width:70vw;overflow:hidden;text-overflow:ellipsis;z-index:2}',
+    '.wv-tip{position:absolute;top:4px;transform:translate(-50%,0);background:var(--bg-2,var(--bg,#111));border:1px solid var(--line,#2a2a2e);border-radius:6px;padding:3px 8px;font-size:12px;white-space:nowrap;pointer-events:none;opacity:0;transition:opacity .12s;font-variant-numeric:tabular-nums;max-width:70vw;overflow:hidden;text-overflow:ellipsis;z-index:2}',
     '.wv-c.hov .wv-tip{opacity:1}',
-    '.wv-ax{display:flex;justify-content:space-between;font-size:11px;color:var(--dim,var(--mute,#9a9a9f));font-variant-numeric:tabular-nums;margin-top:-2px}',
+    '.wv-mc.hov .wv-tip{opacity:1}',
+    '.hy-tr li.wv-li button[aria-pressed="true"]{color:#0a0a0c!important}',
+    '@media (min-width:561px){.hy-tr li.wv-li{display:grid!important;grid-template-columns:44px minmax(150px,1fr) minmax(0,2fr) 5.2em 5.6em;align-items:center}.hy-tr li.wv-li .wv-mc{min-width:0}.hy-tr li.wv-li .hy-tag{justify-self:end}}',
+    '.wv-ax{display:flex;justify-content:space-between;font-size:12px;color:var(--dim,var(--mute,#9a9a9f));font-variant-numeric:tabular-nums;margin-top:-2px}',
     '.hy-chap button[aria-current="true"]{color:var(--gold,var(--sun,#c9a962))}',
     '.hy-chap button[aria-current="true"] .tm{color:var(--gold,var(--sun,#c9a962))}',
     /* track rows */
@@ -63,7 +68,7 @@
     '.hy-tr li.wv-li .t{flex:1 1 140px}',
     '.wv-mc{flex:2 1 220px;min-width:160px;height:40px;position:relative;cursor:pointer;touch-action:pan-y;-webkit-tap-highlight-color:transparent}',
     '.wv-mc canvas{display:block;width:100%;height:100%}',
-    '.wv-mt{font-size:12px;color:var(--dim,var(--mute,#9a9a9f));font-variant-numeric:tabular-nums;min-width:4.6em;text-align:right}',
+    '.wv-mt{font-size:12.5px;color:var(--dim,var(--mute,#9a9a9f));font-variant-numeric:tabular-nums;min-width:4.6em;text-align:right}',
     '.hy-tr li.wv-act{border-color:var(--gold,var(--sun,#c9a962))!important}',
     '.hy-tr li.wv-li button svg{width:16px;height:16px;fill:currentColor;display:block;margin:auto}',
     '@media (max-width:560px){.hy-tr li.wv-li{column-gap:12px}.hy-tr li.wv-li .t{order:1;flex:1 1 0}.hy-tr li.wv-li .hy-tag{order:2}.hy-tr li.wv-li::after{content:"";order:3;flex-basis:100%;height:0}.wv-mc{order:4;flex:1 1 0;min-width:0;margin-left:56px;height:36px}.wv-mt{order:5;min-width:0}.wv-c{height:80px}}',
@@ -98,6 +103,9 @@
     x.setTransform(dpr, 0, 0, dpr, 0, 0);
     x.clearRect(0, 0, w, h);
     var gold = accent(c), ink = getComputedStyle(c).color;
+    var rgb = (ink.match(/\d+(\.\d+)?/g) || [200, 200, 200]).map(Number);
+    var light = (rgb[0] * 0.299 + rgb[1] * 0.587 + rgb[2] * 0.114) < 128; // dark ink = light theme
+    var dimA = light ? 0.5 : 0.42, bandA = light ? 0.06 : 0.045;
     var bw = it.mini ? 2 : 2.5, gap = it.mini ? 1.5 : 1.5, step = bw + gap;
     var n = Math.max(8, Math.floor((w + gap) / step));
     var p = it.peaks, total = it.total || 1;
@@ -105,34 +113,34 @@
     var prog = Math.min(1, t / total);
     var hov = it.hover;
     var base = Math.round(h * (it.mini ? 0.72 : 0.7));
+    if (it.chapters && it.chapters.length > 1) {
+      var ci = chapterAt(it, hov != null ? hov * total : t);
+      it.chapters.forEach(function (ch, j) {
+        var x0 = ch.t / total * w, x1 = (j + 1 < it.chapters.length ? it.chapters[j + 1].t : total) / total * w;
+        var hi = j === ci && (cur === it || hov != null || it.last);
+        if (!hi && j % 2) { x.fillStyle = ink; x.globalAlpha = bandA; x.fillRect(x0, 0, x1 - x0, h); }
+        if (hi) { x.fillStyle = gold; x.globalAlpha = 0.12; x.fillRect(x0, 0, x1 - x0, h); }
+        if (j) { x.fillStyle = ink; x.globalAlpha = 0.18; x.fillRect(Math.round(x0), 0, 1, h); }
+      });
+      x.globalAlpha = 1;
+    }
     for (var i = 0; i < n; i++) {
       var v = 0.18;
       if (p && p.length) {
         var a = Math.floor(i * p.length / n), b = Math.max(a + 1, Math.floor((i + 1) * p.length / n)), m = 0;
         for (var k = a; k < b && k < p.length; k++) if (p[k] > m) m = p[k];
-        v = m / 99;
+        v = Math.pow(m / 99, it.mini ? 1.2 : 1.6);
       }
       var bh = Math.max(1.5, v * (base - 2));
       var px = i * step, f = (i + 0.5) / n;
       var played = f <= prog;
       x.fillStyle = played ? gold : ink;
-      x.globalAlpha = played ? 1 : (hov != null && f <= hov ? 0.5 : 0.26);
+      x.globalAlpha = played ? 1 : (hov != null && f <= hov ? Math.min(1, dimA + 0.22) : dimA);
       x.fillRect(px, base - bh, bw, bh);
-      x.globalAlpha *= 0.35;
+      x.globalAlpha *= light ? 0.45 : 0.4;
       x.fillRect(px, base + 1.5, bw, bh * (1 - (it.mini ? 0.72 : 0.7)) / (it.mini ? 0.72 : 0.7) );
     }
     x.globalAlpha = 1;
-    // chapter ticks
-    if (it.chapters && it.chapters.length > 1) {
-      x.fillStyle = ink;
-      it.chapters.forEach(function (ch, j) {
-        if (!j) return;
-        var cx = Math.round(ch.t / total * w) + 0.5;
-        x.globalAlpha = 0.45;
-        x.fillRect(cx - 0.5, 0, 1, 6);
-      });
-      x.globalAlpha = 1;
-    }
     // playhead
     if (cur === it || it.last) {
       x.fillStyle = gold;
@@ -148,7 +156,7 @@
 
   /* ---------- engine ---------- */
   function offset(it, k) { var s = 0; for (var i = 0; i < k; i++) s += it.durs[i]; return s; }
-  function now() { return cur ? offset(cur, part) + (A.currentTime || 0) : 0; }
+  function now() { return cur ? offset(cur, part) + (pending != null ? pending : (A.currentTime || 0)) : 0; }
   function chapterAt(it, t) {
     if (!it.chapters) return -1;
     var r = -1; for (var i = 0; i < it.chapters.length; i++) if (t + 0.25 >= it.chapters[i].t) r = i; return r;
@@ -157,29 +165,39 @@
     part = k;
     var src = BASE + it.files[k] + '.mp3';
     if (A.src.indexOf(src) < 0) { A.src = src; pending = t; A.load(); }
+    else if (A.readyState < 1 || pending != null) pending = t;
     else { try { A.currentTime = t; } catch (e) { pending = t; } }
     if (play) A.play().catch(function () { busy(false); ui(); });
   }
   function seek(it, t, play) {
     t = Math.max(0, Math.min(it.total - 0.25, t));
-        cur = it; it.last = t;
+    if (play === undefined) play = true;
+    cur = it; it.last = t;
     var k = 0; while (k < it.files.length - 1 && t >= offset(it, k + 1)) k++;
-    load(it, k, t - offset(it, k), play !== false ? true : !A.paused);
+    load(it, k, t - offset(it, k), play);
+    if (!play && !A.paused) A.pause();
+    reveal(it);
     ui(); meta();
+  }
+  function reveal(it) {
+    var d = it.li && it.li.closest('details');
+    if (d && !d.open && !A.paused) d.open = true;
   }
   function toggle(it) {
     if (cur === it && !A.paused) { A.pause(); return; }
-    if (cur === it && A.src) { A.play().catch(function () {}); return; }
+    if (cur === it && A.src && !A.ended) { A.play().catch(function () {}); return; }
     seek(it, it.last && it.last < it.total - 1 ? it.last : 0, true);
   }
   A.addEventListener('loadedmetadata', function () {
     if (pending != null) { try { A.currentTime = pending; } catch (e) {} pending = null; }
+    ui();
   });
   A.addEventListener('ended', function () {
     if (!cur) return;
     if (part + 1 < cur.files.length) { load(cur, part + 1, 0, true); return; }
     var it = cur; it.last = 0;
     if (it.next) { seek(it.next, 0, true); return; }
+    seek(it, 0, false);
     ui();
   });
   function busy(on) { items.forEach(function (it) { if (it.btn) it.btn.classList.toggle('wv-busy', !!on && it === cur); }); }
@@ -221,6 +239,14 @@
           it.ci = ci;
           it.chapters.forEach(function (ch, j) { if (ch.btn) ch.btn.setAttribute('aria-current', j === ci && (cur === it || it.last) ? 'true' : 'false'); });
           if (it.nowEl) it.nowEl.innerHTML = '<small>' + (ci >= 0 ? (ci + 1) + '/' + it.chapters.length : '') + '</small>' + esc(ci >= 0 ? it.chapters[ci].name : it.title);
+          if (it.nxEl) {
+            var nx = it.chapters[ci + 1];
+            it.nxEl.hidden = !nx;
+            if (nx) {
+              it.nxEl.textContent = (it.lang === 'ja' ? '次 → ' : 'Next → ') + nx.name + '  ' + fmt(nx.t);
+              it.nxEl.setAttribute('aria-label', (it.lang === 'ja' ? '次の曲から再生: ' : 'Play from next track: ') + nx.name);
+            }
+          }
         }
       }
     });
@@ -291,7 +317,7 @@
     showBar();
   }) : null;
   function showBar() {
-    var lang = cur ? cur.lang : L(document.body);
+    var lang = (root.lang || 'ja').indexOf('ja') === 0 ? 'ja' : 'en';
     bar.el.setAttribute('aria-label', TX[lang].now);
     bar.x.setAttribute('aria-label', TX[lang].close);
     if (!A.paused) bar.hidden = false;
@@ -313,6 +339,7 @@
       if (it.tip) {
         var t = f * it.total, ci = chapterAt(it, t);
         it.tip.textContent = fmt(t) + (ci >= 0 ? '  ' + it.chapters[ci].name : '');
+        it.tip.style.top = it.mini ? '-4px' : '4px'; it.tip.style.transform = it.mini ? 'translate(-50%,-100%)' : 'translate(-50%,0)';
         var r = el.getBoundingClientRect(), tw = it.tip.offsetWidth / 2;
         it.tip.style.left = Math.max(tw, Math.min(r.width - tw, f * r.width)) + 'px';
       }
@@ -334,7 +361,9 @@
       else if (k === 'Home') t = 0; else if (k === 'End') t = it.total - 1;
       else if (k === ' ' || k === 'Enter') { ev.preventDefault(); toggle(it); return; }
       else return;
-      ev.preventDefault(); seek(it, t, cur === it && !A.paused);
+      ev.preventDefault();
+      if (cur !== it) { it.last = Math.max(0, Math.min(it.total - 1, t)); tick(); draw(it); return; }
+      seek(it, t, !A.paused);
     });
   }
   function slider(el, it, label) {
@@ -374,7 +403,7 @@
       });
     }
     var w = document.createElement('div'); w.className = 'wv';
-    w.innerHTML = '<div class="wv-row"><button type="button" class="wv-play"></button><div class="wv-meta"><span class="wv-now"></span><span class="wv-time"></span></div></div>' +
+    w.innerHTML = '<div class="wv-row"><button type="button" class="wv-play"></button><div class="wv-meta"><span class="wv-now"></span><span class="wv-time"></span>' + (chs.length ? '<button type="button" class="wv-nx"></button>' : '') + '</div></div>' +
       '<div class="wv-c"><canvas aria-hidden="true"></canvas><span class="wv-tip" aria-hidden="true"></span></div>' +
       '<div class="wv-ax" aria-hidden="true"><span>0:00</span><span>' + fmt(it.total / 2) + '</span><span>' + fmt(it.total) + '</span></div>';
     au.parentNode.insertBefore(w, au);
@@ -383,7 +412,12 @@
     it.nowEl = w.querySelector('.wv-now'); it.timeEl = w.querySelector('.wv-time');
     if (!it.chapters) { it.nowEl.hidden = true; it.timeEl.style.fontSize = '14.5px'; }
     if (it.chapters) it.nowEl.innerHTML = '<small>1/' + it.chapters.length + '</small>' + esc(it.chapters[0].name);
-    it.ci = it.chapters ? 0 : -1;
+    it.ci = -2;
+    it.nxEl = w.querySelector('.wv-nx');
+    if (it.nxEl) it.nxEl.addEventListener('click', function () {
+      var t = cur === it ? now() : (it.last || 0), ci = chapterAt(it, t);
+      if (ci + 1 < it.chapters.length) seek(it, it.chapters[ci + 1].t, true);
+    });
     var wc = w.querySelector('.wv-c');
     slider(wc, it, it.title); bindWave(it, wc);
     it.btn.addEventListener('click', function () { toggle(it); });
@@ -398,13 +432,13 @@
     var nb = b.cloneNode(false); nb.removeAttribute('data-src'); b.parentNode.replaceChild(nb, b); it.btn = nb;
     nb.addEventListener('click', function () { toggle(it); });
     var mc = document.createElement('div'); mc.className = 'wv-mc';
-    mc.innerHTML = '<canvas aria-hidden="true"></canvas>';
+    mc.innerHTML = '<canvas aria-hidden="true"></canvas><span class="wv-tip" aria-hidden="true"></span>';
     var mt = document.createElement('span'); mt.className = 'wv-mt';
     tEl.parentNode.insertBefore(mc, tEl.nextSibling);
     var tag = li.querySelector('.hy-tag');
     if (tag) li.insertBefore(mt, tag); else li.appendChild(mt);
     li.classList.add('wv-li');
-    it.canvas = mc.querySelector('canvas'); it.timeEl = mt;
+    it.canvas = mc.querySelector('canvas'); it.timeEl = mt; it.tip = mc.querySelector('.wv-tip');
     slider(mc, it, title); bindWave(it, mc);
     if (io) io.observe(li);
     if (prev) prev.next = it;
@@ -416,7 +450,7 @@
     // tracks chain per language block so "next" stays inside the same list
     var groups = new Map();
     document.querySelectorAll('.hy-tr li').forEach(function (li) {
-      var g = li.closest('[data-l]') || document.body;
+      var g = L(li);
       groups.set(g, buildTrack(li, groups.get(g)));
     });
     items.forEach(function (it) { setBtn(it.btn, false, it.title, it.lang); });
@@ -425,12 +459,19 @@
     if ('ResizeObserver' in window) { var ro = new ResizeObserver(function () { drawAll(); }); items.forEach(function (it) { if (it.canvas) ro.observe(it.canvas); }); }
     // repaint when a closed <details> opens, the language or theme flips
     document.querySelectorAll('details').forEach(function (d) { d.addEventListener('toggle', drawAll); });
-    new MutationObserver(function () { setTimeout(drawAll, 0); showBar(); }).observe(root, { attributes: true, attributeFilter: ['lang', 'data-theme'] });
+    new MutationObserver(function () {
+      var lang = (root.lang || 'ja').indexOf('ja') === 0 ? 'ja' : 'en';
+      if (cur && cur.lang !== lang) {
+        var twin = items.filter(function (o) { return o.lang === lang && o.files.join() === cur.files.join(); })[0];
+        if (twin) { var t = now(); cur.last = 0; twin.last = t; cur = twin; ui(); meta(); }
+      }
+      setTimeout(drawAll, 0); showBar();
+    }).observe(root, { attributes: true, attributeFilter: ['lang', 'data-theme'] });
     if (window.matchMedia) matchMedia('(prefers-color-scheme: dark)').addEventListener && matchMedia('(prefers-color-scheme: dark)').addEventListener('change', drawAll);
   }
   window.hyStop = function () { A.pause(); };
 
-  fetch('/hamayuki/peaks.json').then(function (r) { if (!r.ok) throw 0; return r.json(); })
+  fetch('/hamayuki/peaks.json?v=2').then(function (r) { if (!r.ok) throw 0; return r.json(); })
     .then(function (j) { PEAKS = j; build(); })
     .catch(function () { /* keep native players */ });
 })();
