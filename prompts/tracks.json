@@ -1,0 +1,82 @@
+{
+ "tool": "MUREKA (via teai.io media API, 60-second tier, instrumental)",
+ "note": "Prompt BPM is the request; the BPM shown on the site is measured from the audio.",
+ "tracks": [
+  {
+   "file": "first-ember",
+   "title": "First Ember",
+   "requested_bpm": 116,
+   "prompt": "Organic deep house, 116 BPM, instrumental. Opening track as people arrive at a beach at sunset. Warm muted kick, brushed shakers, soft marimba and acoustic guitar motifs, low warm bass, relaxed and inviting, quiet enough to talk over. No vocals."
+  },
+  {
+   "file": "snow-on-the-beach",
+   "title": "Snow on the Beach",
+   "requested_bpm": 118,
+   "prompt": "Deep house, 118 BPM, instrumental. Warm sunset over the Pacific ocean. Soft Rhodes piano chords, gentle ocean waves in the intro, airy shimmering pads like slowly falling snow, crisp light hi-hats, round warm sub bass, slow patient build, spacious and emotional, calm and elegant. No vocals."
+  },
+  {
+   "file": "snow-falls-voice (bed)",
+   "title": "Snow Falls on the Beach (Voice)",
+   "requested_bpm": 118,
+   "prompt": "Deep house, 118 BPM, instrumental. Minimal and spacious, soft felt piano, warm sub bass, gentle ocean waves, airy pads like falling snow, sparse percussion with long open breakdowns leaving room for a spoken voice, intimate late-sunset mood. No vocals."
+  },
+  {
+   "file": "shoreline-glow",
+   "title": "Shoreline Glow",
+   "requested_bpm": 120,
+   "prompt": "Melodic deep house, 120 BPM, instrumental. Golden light on the shoreline. Lush evolving pads, plucked synth melody, rolling bassline, crisp hats, gentle tension and release, emotional but restrained. No vocals."
+  },
+  {
+   "file": "tidal-turn",
+   "title": "Tidal Turn",
+   "requested_bpm": 121,
+   "prompt": "Afro house, 121 BPM, instrumental, with a strong evolving arrangement: 16-bar percussion intro, a catchy marimba hook enters, the bassline changes every 16 bars, a filtered build, an emotional breakdown with strings, then a big drop with a new lead melody answering the hook (call and response), percussion fills and switch-ups every 8 bars, no long repetitive loops. No vocals."
+  },
+  {
+   "file": "kapolei-golden-hour",
+   "title": "Kapolei Golden Hour",
+   "requested_bpm": 122,
+   "prompt": "Afro house, 122 BPM, instrumental. Golden hour on a Hawaiian hillside. Organic hand percussion, shakers, log drums, warm plucked kalimba melody, birdsong in the intro, deep rolling bassline, hypnotic groove that makes people turn to face the sunset. No vocals."
+  },
+  {
+   "file": "lantern-festival",
+   "title": "Lantern Festival",
+   "requested_bpm": 122,
+   "prompt": "Melodic house, 122 BPM, instrumental, cinematic and playful with a clear story: soft pluck intro, rising arpeggio build, a big euphoric drop with a memorable synth hook, a surprise half-time breakdown with Japanese koto and taiko accents, then a second drop with a brighter variation of the hook and extra percussion, constant small changes so it never feels repetitive. No vocals."
+  },
+  {
+   "file": "blue-hour",
+   "title": "Blue Hour",
+   "requested_bpm": 122,
+   "prompt": "Afro melodic house, 122 BPM, instrumental. The sky turns deep blue right after sunset. Hypnotic percussion, log drums, haunting flute-like lead, warm chords, rolling groove, cinematic and tribal. No vocals."
+  },
+  {
+   "file": "moonrise-run",
+   "title": "Moonrise Run",
+   "requested_bpm": 123,
+   "prompt": "Progressive house, 123 BPM, instrumental, high replay value: punchy groove, a vocal-chop style synth hook, driving bass that changes pattern each section, two contrasting breakdowns (one ambient piano, one tension riser), drops that each add new elements, tasteful FX sweeps and drum fills marking every 16 bars, uplifting and dynamic. No vocals."
+  },
+  {
+   "file": "handover",
+   "title": "Handover",
+   "requested_bpm": 124,
+   "prompt": "Melodic house, 124 BPM, instrumental. The moment right after sunset. Warm arpeggiated analog synths, rising lush pads, driving four-on-the-floor kick, uplifting chord progression, emotional breakdown then a euphoric but tasteful peak, ready to hand the dance floor to the next DJ. No vocals."
+  },
+  {
+   "file": "last-wave",
+   "title": "Last Wave",
+   "requested_bpm": 124,
+   "prompt": "Melodic house, 124 BPM, instrumental. Closing peak of a sunset set by the Pacific. Driving kick, euphoric arpeggios, big warm chords, uplifting breakdown and powerful but elegant drop, a feeling of gratitude. No vocals."
+  }
+ ],
+ "voice_lines": {
+  "tool": "KOE synthesized voice based on Yuki Hamada's own voice (consented), lang=ja",
+  "lines": [
+   "暖かい浜に、雪が降る。",
+   "日が沈むまで、あと少しだけ、ここにいよう。",
+   "この夜を、次の人へ。",
+   "ハマユキ。",
+   "ハマユキ・セッションズ。"
+  ]
+ }
+}

@@ -1,0 +1,170 @@
+{
+ "first-ember": {
+  "key": "Am",
+  "camelot": "8A",
+  "conf": 0.204,
+  "r": 0.744,
+  "energy": 3.157
+ },
+ "sunset-drive": {
+  "key": "D",
+  "camelot": "10B",
+  "conf": 0.104,
+  "r": 0.62,
+  "energy": 3.25
+ },
+ "horizon": {
+  "key": "F#m",
+  "camelot": "11A",
+  "conf": 0.144,
+  "r": 0.648,
+  "energy": 2.89
+ },
+ "rooftop-lagos": {
+  "key": "F#m",
+  "camelot": "11A",
+  "conf": 0.238,
+  "r": 0.852,
+  "energy": 3.224
+ },
+ "desert-bloom": {
+  "key": "F#m",
+  "camelot": "11A",
+  "conf": 0.273,
+  "r": 0.838,
+  "energy": 3.137
+ },
+ "snow-falls-voice": {
+  "key": "F#m",
+  "camelot": "11A",
+  "conf": 0.144,
+  "r": 0.82,
+  "energy": 2.624
+ },
+ "organic-afro-house": {
+  "key": "F#m",
+  "camelot": "11A",
+  "conf": 0.311,
+  "r": 0.727,
+  "energy": 3.058
+ },
+ "snow-on-the-beach": {
+  "key": "F#m",
+  "camelot": "11A",
+  "conf": 0.084,
+  "r": 0.733,
+  "energy": 2.599
+ },
+ "sunset-terrace": {
+  "key": "F#m",
+  "camelot": "11A",
+  "conf": 0.116,
+  "r": 0.684,
+  "energy": 3.309
+ },
+ "log-drum-dawn": {
+  "key": "F#m",
+  "camelot": "11A",
+  "conf": 0.173,
+  "r": 0.825,
+  "energy": 2.795
+ },
+ "trade-winds": {
+  "key": "F#m",
+  "camelot": "11A",
+  "conf": 0.273,
+  "r": 0.794,
+  "energy": 3.135
+ },
+ "shoreline-glow": {
+  "key": "A",
+  "camelot": "11B",
+  "conf": 0.077,
+  "r": 0.788,
+  "energy": 2.882
+ },
+ "deep-house-afro-intro": {
+  "key": "F#m",
+  "camelot": "11A",
+  "conf": 0.025,
+  "r": 0.617,
+  "energy": 3.08
+ },
+ "tidal-turn": {
+  "key": "F#m",
+  "camelot": "11A",
+  "conf": 0.048,
+  "r": 0.786,
+  "energy": 2.881
+ },
+ "kapolei-golden-hour": {
+  "key": "F#m",
+  "camelot": "11A",
+  "conf": 0.298,
+  "r": 0.919,
+  "energy": 3.216
+ },
+ "lantern-festival": {
+  "key": "F#m",
+  "camelot": "11A",
+  "conf": 0.264,
+  "r": 0.841,
+  "energy": 2.486
+ },
+ "blue-hour": {
+  "key": "F#m",
+  "camelot": "11A",
+  "conf": 0.316,
+  "r": 0.742,
+  "energy": 3.042
+ },
+ "disco-ball-rise": {
+  "key": "F#m",
+  "camelot": "11A",
+  "conf": 0.031,
+  "r": 0.717,
+  "energy": 2.493
+ },
+ "moonrise-run": {
+  "key": "F#m",
+  "camelot": "11A",
+  "conf": 0.184,
+  "r": 0.906,
+  "energy": 2.599
+ },
+ "uplift": {
+  "key": "A",
+  "camelot": "11B",
+  "conf": 0.024,
+  "r": 0.814,
+  "energy": 2.44
+ },
+ "tribal-circuit": {
+  "key": "F#m",
+  "camelot": "11A",
+  "conf": 0.183,
+  "r": 0.634,
+  "energy": 2.982
+ },
+ "afro-tech": {
+  "key": "Fm",
+  "camelot": "4A",
+  "conf": 0.123,
+  "r": 0.621,
+  "energy": 2.769
+ },
+ "handover": {
+  "key": "G#m",
+  "camelot": "1A",
+  "conf": 0.11,
+  "r": 0.681,
+  "energy": 2.601
+ },
+ "last-wave": {
+  "key": "D",
+  "camelot": "10B",
+  "conf": 0.138,
+  "r": 0.719,
+  "energy": 2.588
+ }
+}

@@ -1,0 +1,55 @@
+{
+ "minutes": 21,
+ "sessions-01": {
+  "minutes": 58,
+  "files": [
+   "sessions-01-1.mp3",
+   "sessions-01-2.mp3",
+   "sessions-01-3.mp3"
+  ],
+  "starts": [
+   0.0,
+   161.8,
+   337.0,
+   525.7,
+   683.7,
+   872.9,
+   1040.3,
+   1236.2,
+   1409.8,
+   1578.5,
+   1750.9,
+   1886.6,
+   2059.8,
+   2244.8,
+   2434.8,
+   2618.2,
+   2803.2,
+   2958.5,
+   3129.7,
+   3299.8
+  ],
+  "order": [
+   "first-ember",
+   "sunset-drive",
+   "horizon",
+   "rooftop-lagos",
+   "desert-bloom",
+   "snow-falls-voice",
+   "organic-afro-house",
+   "snow-on-the-beach",
+   "sunset-terrace",
+   "trade-winds",
+   "shoreline-glow",
+   "deep-house-afro-intro",
+   "kapolei-golden-hour",
+   "blue-hour",
+   "disco-ball-rise",
+   "uplift",
+   "tribal-circuit",
+   "afro-tech",
+   "handover",
+   "last-wave"
+  ]
+ }
+}

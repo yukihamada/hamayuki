@@ -1,0 +1,689 @@
+{
+ "tracks": {
+  "first-ember": {
+   "mp3_320": {
+    "lufs": -14.0,
+    "true_peak": -1.4,
+    "lra": 3.3
+   },
+   "master_wav": {
+    "lufs": -14.0,
+    "true_peak": -1.5,
+    "lra": 3.3
+   }
+  },
+  "sunset-drive": {
+   "mp3_320": {
+    "lufs": -14.0,
+    "true_peak": -1.3,
+    "lra": 3.5
+   },
+   "master_wav": {
+    "lufs": -14.1,
+    "true_peak": -1.5,
+    "lra": 3.5
+   }
+  },
+  "horizon": {
+   "mp3_320": {
+    "lufs": -14.0,
+    "true_peak": -1.2,
+    "lra": 4.1
+   },
+   "master_wav": {
+    "lufs": -14.0,
+    "true_peak": -1.5,
+    "lra": 4.1
+   }
+  },
+  "rooftop-lagos": {
+   "mp3_320": {
+    "lufs": -14.1,
+    "true_peak": -1.3,
+    "lra": 2.8
+   },
+   "master_wav": {
+    "lufs": -14.1,
+    "true_peak": -1.5,
+    "lra": 2.8
+   }
+  },
+  "desert-bloom": {
+   "mp3_320": {
+    "lufs": -14.1,
+    "true_peak": -1.2,
+    "lra": 4.0
+   },
+   "master_wav": {
+    "lufs": -14.1,
+    "true_peak": -1.5,
+    "lra": 4.0
+   }
+  },
+  "snow-falls-voice": {
+   "mp3_320": {
+    "lufs": -14.0,
+    "true_peak": -1.3,
+    "lra": 8.7
+   },
+   "master_wav": {
+    "lufs": -14.0,
+    "true_peak": -1.5,
+    "lra": 8.7
+   }
+  },
+  "organic-afro-house": {
+   "mp3_320": {
+    "lufs": -14.0,
+    "true_peak": -1.1,
+    "lra": 3.2
+   },
+   "master_wav": {
+    "lufs": -14.0,
+    "true_peak": -1.5,
+    "lra": 3.2
+   }
+  },
+  "snow-on-the-beach": {
+   "mp3_320": {
+    "lufs": -14.0,
+    "true_peak": -1.4,
+    "lra": 4.3
+   },
+   "master_wav": {
+    "lufs": -14.0,
+    "true_peak": -1.5,
+    "lra": 4.3
+   }
+  },
+  "sunset-terrace": {
+   "mp3_320": {
+    "lufs": -14.0,
+    "true_peak": -1.2,
+    "lra": 5.2
+   },
+   "master_wav": {
+    "lufs": -14.0,
+    "true_peak": -1.5,
+    "lra": 5.2
+   }
+  },
+  "trade-winds": {
+   "mp3_320": {
+    "lufs": -14.1,
+    "true_peak": -1.2,
+    "lra": 7.6
+   },
+   "master_wav": {
+    "lufs": -14.1,
+    "true_peak": -1.5,
+    "lra": 7.6
+   }
+  },
+  "shoreline-glow": {
+   "mp3_320": {
+    "lufs": -14.0,
+    "true_peak": -1.3,
+    "lra": 4.7
+   },
+   "master_wav": {
+    "lufs": -14.0,
+    "true_peak": -1.5,
+    "lra": 4.7
+   }
+  },
+  "deep-house-afro-intro": {
+   "mp3_320": {
+    "lufs": -14.1,
+    "true_peak": -1.2,
+    "lra": 3.5
+   },
+   "master_wav": {
+    "lufs": -14.1,
+    "true_peak": -1.5,
+    "lra": 3.5
+   }
+  },
+  "kapolei-golden-hour": {
+   "mp3_320": {
+    "lufs": -14.0,
+    "true_peak": -1.4,
+    "lra": 4.1
+   },
+   "master_wav": {
+    "lufs": -14.0,
+    "true_peak": -1.5,
+    "lra": 4.1
+   }
+  },
+  "blue-hour": {
+   "mp3_320": {
+    "lufs": -14.0,
+    "true_peak": -1.3,
+    "lra": 2.6
+   },
+   "master_wav": {
+    "lufs": -14.0,
+    "true_peak": -1.5,
+    "lra": 2.6
+   }
+  },
+  "disco-ball-rise": {
+   "mp3_320": {
+    "lufs": -14.0,
+    "true_peak": -1.5,
+    "lra": 2.8
+   },
+   "master_wav": {
+    "lufs": -14.0,
+    "true_peak": -1.5,
+    "lra": 2.8
+   }
+  },
+  "uplift": {
+   "mp3_320": {
+    "lufs": -14.0,
+    "true_peak": -1.7,
+    "lra": 2.8
+   },
+   "master_wav": {
+    "lufs": -14.0,
+    "true_peak": -1.7,
+    "lra": 2.8
+   }
+  },
+  "tribal-circuit": {
+   "mp3_320": {
+    "lufs": -14.0,
+    "true_peak": -1.3,
+    "lra": 2.9
+   },
+   "master_wav": {
+    "lufs": -14.0,
+    "true_peak": -1.5,
+    "lra": 2.9
+   }
+  },
+  "afro-tech": {
+   "mp3_320": {
+    "lufs": -14.0,
+    "true_peak": -1.3,
+    "lra": 2.5
+   },
+   "master_wav": {
+    "lufs": -14.0,
+    "true_peak": -1.5,
+    "lra": 2.5
+   }
+  },
+  "handover": {
+   "mp3_320": {
+    "lufs": -14.0,
+    "true_peak": -1.3,
+    "lra": 5.1
+   },
+   "master_wav": {
+    "lufs": -14.0,
+    "true_peak": -1.5,
+    "lra": 5.1
+   }
+  },
+  "last-wave": {
+   "mp3_320": {
+    "lufs": -14.0,
+    "true_peak": -1.4,
+    "lra": 3.5
+   },
+   "master_wav": {
+    "lufs": -14.0,
+    "true_peak": -1.5,
+    "lra": 3.5
+   }
+  },
+  "tidal-turn": {
+   "source": {
+    "lufs": -14.4,
+    "true_peak": -0.5,
+    "lra": 2.8
+   },
+   "master_wav": {
+    "lufs": -14.0,
+    "true_peak": -1.5,
+    "lra": 2.8
+   },
+   "mp3_320": {
+    "lufs": -14.0,
+    "true_peak": -1.3,
+    "lra": 2.8
+   }
+  },
+  "lantern-festival": {
+   "source": {
+    "lufs": -13.2,
+    "true_peak": -0.9,
+    "lra": 3.1
+   },
+   "master_wav": {
+    "lufs": -14.0,
+    "true_peak": -1.7,
+    "lra": 3.0
+   },
+   "mp3_320": {
+    "lufs": -14.0,
+    "true_peak": -1.7,
+    "lra": 3.0
+   }
+  },
+  "moonrise-run": {
+   "source": {
+    "lufs": -13.5,
+    "true_peak": -1.4,
+    "lra": 4.6
+   },
+   "master_wav": {
+    "lufs": -14.0,
+    "true_peak": -1.9,
+    "lra": 4.6
+   },
+   "mp3_320": {
+    "lufs": -14.0,
+    "true_peak": -1.9,
+    "lra": 4.6
+   }
+  },
+  "log-drum-dawn": {
+   "source": {
+    "lufs": -16.7,
+    "true_peak": -1.7,
+    "lra": 6.1
+   },
+   "master_wav": {
+    "lufs": -14.1,
+    "true_peak": -1.5,
+    "lra": 6.1
+   },
+   "mp3_320": {
+    "lufs": -14.1,
+    "true_peak": -1.2,
+    "lra": 6.1
+   }
+  }
+ },
+ "mixes": {
+  "sessions-01": {
+   "minutes": 46.9,
+   "files": [
+    "sessions-01-1.mp3",
+    "sessions-01-2.mp3",
+    "sessions-01-3.mp3"
+   ],
+   "master_wav": {
+    "lufs": -14.1,
+    "true_peak": -2.7,
+    "lra": 3.4
+   },
+   "parts": [
+    {
+     "lufs": -14.4,
+     "true_peak": -2.4,
+     "lra": 3.0
+    },
+    {
+     "lufs": -14.3,
+     "true_peak": -2.4,
+     "lra": 4.3
+    },
+    {
+     "lufs": -14.3,
+     "true_peak": -1.9,
+     "lra": 3.0
+    }
+   ],
+   "starts": [
+    0.0,
+    137.589,
+    252.405,
+    366.823,
+    480.257,
+    605.422,
+    718.348,
+    843.472,
+    967.543,
+    1078.588,
+    1190.087,
+    1316.357,
+    1445.338,
+    1557.93,
+    1680.164,
+    1789.382,
+    1882.515,
+    1990.955,
+    2099.725,
+    2207.745,
+    2327.251,
+    2446.45,
+    2565.498,
+    2684.964
+   ],
+   "transitions": [
+    {
+     "from": "first-ember",
+     "to": "sunset-drive",
+     "pred_err_ms": 2.5,
+     "short_blend": true,
+     "kick_conf_out": 3.92,
+     "kick_conf_in": 3.67
+    },
+    {
+     "from": "sunset-drive",
+     "to": "horizon",
+     "pred_err_ms": -0.0,
+     "short_blend": false,
+     "kick_conf_out": 2.24,
+     "kick_conf_in": 8.98
+    },
+    {
+     "from": "horizon",
+     "to": "rooftop-lagos",
+     "pred_err_ms": 0.5,
+     "short_blend": false,
+     "kick_conf_out": 7.86,
+     "kick_conf_in": 2.61
+    },
+    {
+     "from": "rooftop-lagos",
+     "to": "desert-bloom",
+     "pred_err_ms": -3.1,
+     "short_blend": false,
+     "kick_conf_out": 3.62,
+     "kick_conf_in": 3.39
+    },
+    {
+     "from": "desert-bloom",
+     "to": "organic-afro-house",
+     "pred_err_ms": 0.0,
+     "short_blend": true,
+     "kick_conf_out": 2.87,
+     "kick_conf_in": 1.41
+    },
+    {
+     "from": "organic-afro-house",
+     "to": "snow-on-the-beach",
+     "pred_err_ms": -0.0,
+     "short_blend": false,
+     "kick_conf_out": 1.63,
+     "kick_conf_in": 6.48
+    },
+    {
+     "from": "snow-on-the-beach",
+     "to": "sunset-terrace",
+     "pred_err_ms": -19.3,
+     "short_blend": true,
+     "kick_conf_out": 7.94,
+     "kick_conf_in": 1.73
+    },
+    {
+     "from": "sunset-terrace",
+     "to": "trade-winds",
+     "pred_err_ms": 3.5,
+     "short_blend": true,
+     "kick_conf_out": 2.08,
+     "kick_conf_in": 9.6
+    },
+    {
+     "from": "trade-winds",
+     "to": "shoreline-glow",
+     "pred_err_ms": 0.0,
+     "short_blend": false,
+     "kick_conf_out": 3.82,
+     "kick_conf_in": 11.6
+    },
+    {
+     "from": "shoreline-glow",
+     "to": "snow-falls-voice",
+     "pred_err_ms": 0.0,
+     "short_blend": false,
+     "kick_conf_out": 6.31,
+     "kick_conf_in": 8.12
+    },
+    {
+     "from": "snow-falls-voice",
+     "to": "log-drum-dawn",
+     "pred_err_ms": 2.6,
+     "short_blend": true,
+     "kick_conf_out": 7.87,
+     "kick_conf_in": 1.78
+    },
+    {
+     "from": "log-drum-dawn",
+     "to": "deep-house-afro-intro",
+     "pred_err_ms": 2.0,
+     "short_blend": true,
+     "kick_conf_out": 1.72,
+     "kick_conf_in": 2.29
+    },
+    {
+     "from": "deep-house-afro-intro",
+     "to": "tidal-turn",
+     "pred_err_ms": 1.0,
+     "short_blend": false,
+     "kick_conf_out": 1.55,
+     "kick_conf_in": 2.28
+    },
+    {
+     "from": "tidal-turn",
+     "to": "kapolei-golden-hour",
+     "pred_err_ms": 4.0,
+     "short_blend": true,
+     "kick_conf_out": 1.96,
+     "kick_conf_in": 2.95
+    },
+    {
+     "from": "kapolei-golden-hour",
+     "to": "lantern-festival",
+     "pred_err_ms": -2.3,
+     "short_blend": false,
+     "kick_conf_out": 2.1,
+     "kick_conf_in": 10.65
+    },
+    {
+     "from": "lantern-festival",
+     "to": "blue-hour",
+     "pred_err_ms": 3.5,
+     "short_blend": false,
+     "kick_conf_out": 3.0,
+     "kick_conf_in": 4.23
+    },
+    {
+     "from": "blue-hour",
+     "to": "disco-ball-rise",
+     "pred_err_ms": -0.8,
+     "short_blend": false,
+     "kick_conf_out": 1.8,
+     "kick_conf_in": 3.65
+    },
+    {
+     "from": "disco-ball-rise",
+     "to": "moonrise-run",
+     "pred_err_ms": 3.5,
+     "short_blend": false,
+     "kick_conf_out": 3.83,
+     "kick_conf_in": 4.93
+    },
+    {
+     "from": "moonrise-run",
+     "to": "afro-tech",
+     "pred_err_ms": 0.2,
+     "short_blend": false,
+     "kick_conf_out": 6.31,
+     "kick_conf_in": 2.44
+    },
+    {
+     "from": "afro-tech",
+     "to": "tribal-circuit",
+     "pred_err_ms": 1.5,
+     "short_blend": true,
+     "kick_conf_out": 2.86,
+     "kick_conf_in": 1.88
+    },
+    {
+     "from": "tribal-circuit",
+     "to": "uplift",
+     "pred_err_ms": 1.0,
+     "short_blend": true,
+     "kick_conf_out": 1.65,
+     "kick_conf_in": 10.54
+    },
+    {
+     "from": "uplift",
+     "to": "handover",
+     "pred_err_ms": -0.9,
+     "short_blend": true,
+     "kick_conf_out": 5.12,
+     "kick_conf_in": 8.77
+    },
+    {
+     "from": "handover",
+     "to": "last-wave",
+     "pred_err_ms": -0.0,
+     "short_blend": true,
+     "kick_conf_out": 8.27,
+     "kick_conf_in": 14.11
+    }
+   ],
+   "chapters": [
+    0.0,
+    139.66,
+    260.65,
+    375.03,
+    488.43,
+    607.46,
+    726.48,
+    845.5,
+    969.56,
+    1086.59,
+    1198.09,
+    1318.41,
+    1447.44,
+    1566.0,
+    1682.15,
+    1797.25,
+    1898.19,
+    1998.76,
+    2107.53,
+    2215.49,
+    2329.19,
+    2448.39,
+    2567.43,
+    2686.9
+   ],
+   "order": [
+    "first-ember",
+    "sunset-drive",
+    "horizon",
+    "rooftop-lagos",
+    "desert-bloom",
+    "organic-afro-house",
+    "snow-on-the-beach",
+    "sunset-terrace",
+    "trade-winds",
+    "shoreline-glow",
+    "snow-falls-voice",
+    "log-drum-dawn",
+    "deep-house-afro-intro",
+    "tidal-turn",
+    "kapolei-golden-hour",
+    "lantern-festival",
+    "blue-hour",
+    "disco-ball-rise",
+    "moonrise-run",
+    "afro-tech",
+    "tribal-circuit",
+    "uplift",
+    "handover",
+    "last-wave"
+   ],
+   "duration": 2814.04,
+   "format": "mp3 192k CBR"
+  },
+  "sunset-mix-00": {
+   "minutes": 20.94,
+   "files": [
+    "sunset-mix-00.mp3"
+   ],
+   "master_wav": {
+    "lufs": -14.1,
+    "true_peak": -2.7,
+    "lra": 3.7
+   },
+   "parts": [
+    {
+     "lufs": -14.5,
+     "true_peak": -2.3,
+     "lra": 3.7
+    }
+   ],
+   "starts": [
+    0.0,
+    171.387,
+    356.206,
+    526.287,
+    689.502,
+    880.582,
+    1074.195
+   ],
+   "transitions": [
+    {
+     "from": "sunset-drive",
+     "to": "desert-bloom",
+     "pred_err_ms": 2.5,
+     "short_blend": false,
+     "kick_conf_out": 1.86,
+     "kick_conf_in": 7.0
+    },
+    {
+     "from": "desert-bloom",
+     "to": "snow-on-the-beach",
+     "pred_err_ms": 4.0,
+     "short_blend": false,
+     "kick_conf_out": 2.83,
+     "kick_conf_in": 5.06
+    },
+    {
+     "from": "snow-on-the-beach",
+     "to": "sunset-terrace",
+     "pred_err_ms": 5.5,
+     "short_blend": false,
+     "kick_conf_out": 8.58,
+     "kick_conf_in": 3.16
+    },
+    {
+     "from": "sunset-terrace",
+     "to": "kapolei-golden-hour",
+     "pred_err_ms": 4.5,
+     "short_blend": false,
+     "kick_conf_out": 2.96,
+     "kick_conf_in": 2.16
+    },
+    {
+     "from": "kapolei-golden-hour",
+     "to": "uplift",
+     "pred_err_ms": 4.0,
+     "short_blend": true,
+     "kick_conf_out": 2.54,
+     "kick_conf_in": 2.9
+    },
+    {
+     "from": "uplift",
+     "to": "handover",
+     "pred_err_ms": -2.0,
+     "short_blend": true,
+     "kick_conf_out": 2.12,
+     "kick_conf_in": 2.15
+    }
+   ],
+   "format": "mp3 160k CBR",
+   "duration": 1256.33
+  }
+ }
+}

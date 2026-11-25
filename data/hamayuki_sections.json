@@ -1,0 +1,218 @@
+{
+ "first-ember": {
+  "start": 9.829,
+  "end": 142.238,
+  "beats": 256,
+  "full": 174.2,
+  "kick_head": 0.88,
+  "kick_tail": 0.91,
+  "bpm": 116.004
+ },
+ "sunset-drive": {
+  "start": 50.223,
+  "end": 182.257,
+  "beats": 256,
+  "full": 187.9,
+  "kick_head": 0.44,
+  "kick_tail": 0.78,
+  "bpm": 116.334
+ },
+ "horizon": {
+  "start": 65.809,
+  "end": 195.989,
+  "beats": 256,
+  "full": 198.7,
+  "kick_head": 0.97,
+  "kick_tail": 0.81,
+  "bpm": 117.99
+ },
+ "rooftop-lagos": {
+  "start": 18.278,
+  "end": 148.441,
+  "beats": 256,
+  "full": 169.0,
+  "kick_head": 0.84,
+  "kick_tail": 0.84,
+  "bpm": 118.006
+ },
+ "desert-bloom": {
+  "start": 17.282,
+  "end": 147.432,
+  "beats": 256,
+  "full": 200.6,
+  "kick_head": 1.0,
+  "kick_tail": 0.38,
+  "bpm": 118.018
+ },
+ "snow-falls-voice": {
+  "start": 25.129,
+  "end": 156.407,
+  "beats": 256,
+  "full": 179.6,
+  "kick_head": 1.0,
+  "kick_tail": 0.84,
+  "bpm": 117.004
+ },
+ "organic-afro-house": {
+  "start": 10.593,
+  "end": 140.686,
+  "beats": 256,
+  "full": 208.8,
+  "kick_head": 0.84,
+  "kick_tail": 0.69,
+  "bpm": 118.07
+ },
+ "snow-on-the-beach": {
+  "start": 51.572,
+  "end": 181.746,
+  "beats": 256,
+  "full": 187.5,
+  "kick_head": 0.88,
+  "kick_tail": 0.62,
+  "bpm": 117.996
+ },
+ "sunset-terrace": {
+  "start": 40.977,
+  "end": 169.997,
+  "beats": 256,
+  "full": 181.2,
+  "kick_head": 0.72,
+  "kick_tail": 0.75,
+  "bpm": 119.052
+ },
+ "trade-winds": {
+  "start": 32.246,
+  "end": 160.231,
+  "beats": 256,
+  "full": 184.1,
+  "kick_head": 1.0,
+  "kick_tail": 0.59,
+  "bpm": 120.014
+ },
+ "shoreline-glow": {
+  "start": 8.682,
+  "end": 136.682,
+  "beats": 256,
+  "full": 148.2,
+  "kick_head": 0.56,
+  "kick_tail": 0.47,
+  "bpm": 120.0
+ },
+ "deep-house-afro-intro": {
+  "start": 55.795,
+  "end": 181.696,
+  "beats": 256,
+  "full": 183.1,
+  "kick_head": 0.72,
+  "kick_tail": 0.78,
+  "bpm": 122.001
+ },
+ "kapolei-golden-hour": {
+  "start": 2.006,
+  "end": 127.474,
+  "beats": 256,
+  "full": 194.1,
+  "kick_head": 0.84,
+  "kick_tail": 0.84,
+  "bpm": 122.422
+ },
+ "blue-hour": {
+  "start": 8.559,
+  "end": 133.413,
+  "beats": 256,
+  "full": 199.7,
+  "kick_head": 1.0,
+  "kick_tail": 0.22,
+  "bpm": 123.024
+ },
+ "disco-ball-rise": {
+  "start": 35.317,
+  "end": 160.266,
+  "beats": 256,
+  "full": 193.7,
+  "kick_head": 0.84,
+  "kick_tail": 0.75,
+  "bpm": 122.93
+ },
+ "uplift": {
+  "start": 50.652,
+  "end": 173.512,
+  "beats": 256,
+  "full": 194.4,
+  "kick_head": 0.88,
+  "kick_tail": 0.78,
+  "bpm": 125.02
+ },
+ "tribal-circuit": {
+  "start": 16.628,
+  "end": 139.644,
+  "beats": 256,
+  "full": 165.6,
+  "kick_head": 0.81,
+  "kick_tail": 0.56,
+  "bpm": 124.862
+ },
+ "afro-tech": {
+  "start": 2.423,
+  "end": 125.701,
+  "beats": 256,
+  "full": 181.9,
+  "kick_head": 1.0,
+  "kick_tail": 0.94,
+  "bpm": 124.596
+ },
+ "handover": {
+  "start": 48.331,
+  "end": 171.746,
+  "beats": 256,
+  "full": 182.0,
+  "kick_head": 0.66,
+  "kick_tail": 0.25,
+  "bpm": 124.458
+ },
+ "last-wave": {
+  "start": 57.809,
+  "end": 179.702,
+  "beats": 256,
+  "full": 185.4,
+  "kick_head": 0.72,
+  "kick_tail": 0.91,
+  "bpm": 126.012
+ },
+ "tidal-turn": {
+  "start": 26.423,
+  "end": 152.37,
+  "beats": 256,
+  "full": 193.1,
+  "kick_head": 0.5,
+  "kick_tail": 0.91,
+  "bpm": 121.956
+ },
+ "lantern-festival": {
+  "start": 16.855,
+  "end": 141.725,
+  "beats": 256,
+  "full": 178.0,
+  "kick_head": 0.97,
+  "kick_tail": 0.72,
+  "bpm": 123.008
+ },
+ "moonrise-run": {
+  "start": 47.15,
+  "end": 171.011,
+  "beats": 256,
+  "full": 196.6,
+  "kick_head": 0.81,
+  "kick_tail": 0.88,
+  "bpm": 124.01
+ },
+ "log-drum-dawn": {
+  "start": 52.333,
+  "end": 190.136,
+  "beats": 256,
+  "full": 191.1,
+  "kick_head": 0.56,
+  "kick_tail": 0.53,
+  "bpm": 111.028
+ }
+}
