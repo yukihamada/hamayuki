@@ -1,0 +1,19 @@
+# Python (tested on 3.11)
+numpy>=1.24
+librosa>=0.10
+soundfile>=0.12
+pyloudnorm>=0.1.1
+
+# External binaries (NOT pip — install separately):
+#   ffmpeg / ffprobe  built WITH these libraries:
+#     - libmp3lame      (MP3 encode)
+#     - librubberband   (tempo/pitch stretch, used via ffmpeg's rubberband filter)
+#   macOS  : Homebrew's default ffmpeg does NOT include librubberband.
+#            Use a build that links it, e.g.:
+#              brew install rubberband
+#              brew install ffmpeg --with-rubberband   # or a static build with rubberband
+#            (this project used a custom ffmpeg at ~/bin/ffmpeg that has the rubberband filter)
+#   Ubuntu : sudo apt install ffmpeg librubberband2
+#
+# Verify the key filter is available before running the pipeline:
+#   ffmpeg -hide_banner -filters | grep rubberband

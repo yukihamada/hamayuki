@@ -214,5 +214,41 @@
   "kick_head": 0.56,
   "kick_tail": 0.53,
   "bpm": 111.028
+ },
+ "warm-rise": {
+  "start": 63.65,
+  "end": 188.481,
+  "beats": 256,
+  "full": 195.7,
+  "kick_head": 0.47,
+  "kick_tail": 0.62,
+  "bpm": 123.046875
+ },
+ "night-tide": {
+  "start": 23.184,
+  "end": 148.015,
+  "beats": 256,
+  "full": 189.3,
+  "kick_head": 0.62,
+  "kick_tail": 0.72,
+  "bpm": 123.046875
+ },
+ "ember-drive": {
+  "start": 33.18,
+  "end": 158.011,
+  "beats": 256,
+  "full": 179.3,
+  "kick_head": 1.0,
+  "kick_tail": 0.47,
+  "bpm": 123.046875
+ },
+ "last-light": {
+  "start": 55.231,
+  "end": 180.061,
+  "beats": 256,
+  "full": 187.6,
+  "kick_head": 0.72,
+  "kick_tail": 0.47,
+  "bpm": 123.046875
  }
 }

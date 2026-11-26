@@ -1,0 +1,242 @@
+{
+ "first-ember": {
+  "key": "Am",
+  "camelot": "8A",
+  "conf": 0.257,
+  "krumhansl": 0.792,
+  "temperley": 0.666,
+  "alt": "C",
+  "alt_camelot": "8B",
+  "energy": 2.892
+ },
+ "sunset-drive": {
+  "key": "D",
+  "camelot": "10B",
+  "conf": 0.069,
+  "krumhansl": 0.572,
+  "temperley": 0.494,
+  "alt": "Gm",
+  "alt_camelot": "6A",
+  "energy": 3.246
+ },
+ "horizon": {
+  "key": "F#m",
+  "camelot": "11A",
+  "conf": 0.394,
+  "krumhansl": 0.689,
+  "temperley": 0.675,
+  "alt": "F#",
+  "alt_camelot": "2B",
+  "energy": 2.895
+ },
+ "rooftop-lagos": {
+  "key": "F#m",
+  "camelot": "11A",
+  "conf": 0.418,
+  "krumhansl": 0.846,
+  "temperley": 0.782,
+  "alt": "F#",
+  "alt_camelot": "2B",
+  "energy": 3.128
+ },
+ "desert-bloom": {
+  "key": "F#m",
+  "camelot": "11A",
+  "conf": 0.44,
+  "krumhansl": 0.845,
+  "temperley": 0.772,
+  "alt": "F#",
+  "alt_camelot": "2B",
+  "energy": 3.093
+ },
+ "snow-falls-voice": {
+  "key": "F#m",
+  "camelot": "11A",
+  "conf": 0.161,
+  "krumhansl": 0.848,
+  "temperley": 0.709,
+  "alt": "A",
+  "alt_camelot": "11B",
+  "energy": 2.318
+ },
+ "organic-afro-house": {
+  "key": "F#m",
+  "camelot": "11A",
+  "conf": 0.401,
+  "krumhansl": 0.73,
+  "temperley": 0.554,
+  "alt": "D",
+  "alt_camelot": "10B",
+  "energy": 3.01
+ },
+ "snow-on-the-beach": {
+  "key": "F#m",
+  "camelot": "11A",
+  "conf": 0.158,
+  "krumhansl": 0.762,
+  "temperley": 0.727,
+  "alt": "C#m",
+  "alt_camelot": "12A",
+  "energy": 2.503
+ },
+ "sunset-terrace": {
+  "key": "F#m",
+  "camelot": "11A",
+  "conf": 0.304,
+  "krumhansl": 0.714,
+  "temperley": 0.703,
+  "alt": "D",
+  "alt_camelot": "10B",
+  "energy": 3.181
+ },
+ "log-drum-dawn": {
+  "key": "F#m",
+  "camelot": "11A",
+  "conf": 0.352,
+  "krumhansl": 0.846,
+  "temperley": 0.781,
+  "alt": "D",
+  "alt_camelot": "10B",
+  "energy": 2.833
+ },
+ "trade-winds": {
+  "key": "F#m",
+  "camelot": "11A",
+  "conf": 0.417,
+  "krumhansl": 0.852,
+  "temperley": 0.617,
+  "alt": "F#",
+  "alt_camelot": "2B",
+  "energy": 2.811
+ },
+ "shoreline-glow": {
+  "key": "A",
+  "camelot": "11B",
+  "conf": 0.117,
+  "krumhansl": 0.8,
+  "temperley": 0.73,
+  "alt": "D",
+  "alt_camelot": "10B",
+  "energy": 2.712
+ },
+ "deep-house-afro-intro": {
+  "key": "A",
+  "camelot": "11B",
+  "conf": 0.064,
+  "krumhansl": 0.614,
+  "temperley": 0.538,
+  "alt": "A",
+  "alt_camelot": "11B",
+  "energy": 3.019
+ },
+ "tidal-turn": {
+  "key": "A",
+  "camelot": "11B",
+  "conf": 0.091,
+  "krumhansl": 0.772,
+  "temperley": 0.668,
+  "alt": "A",
+  "alt_camelot": "11B",
+  "energy": 2.865
+ },
+ "kapolei-golden-hour": {
+  "key": "F#m",
+  "camelot": "11A",
+  "conf": 0.361,
+  "krumhansl": 0.925,
+  "temperley": 0.762,
+  "alt": "F#",
+  "alt_camelot": "2B",
+  "energy": 3.107
+ },
+ "lantern-festival": {
+  "key": "F#m",
+  "camelot": "11A",
+  "conf": 0.304,
+  "krumhansl": 0.812,
+  "temperley": 0.602,
+  "alt": "F#",
+  "alt_camelot": "2B",
+  "energy": 2.358
+ },
+ "blue-hour": {
+  "key": "F#m",
+  "camelot": "11A",
+  "conf": 0.445,
+  "krumhansl": 0.742,
+  "temperley": 0.626,
+  "alt": "F#",
+  "alt_camelot": "2B",
+  "energy": 2.971
+ },
+ "disco-ball-rise": {
+  "key": "F#m",
+  "camelot": "11A",
+  "conf": 0.131,
+  "krumhansl": 0.73,
+  "temperley": 0.716,
+  "alt": "C#m",
+  "alt_camelot": "12A",
+  "energy": 2.477
+ },
+ "warm-rise": {
+  "key": "F#m",
+  "camelot": "11A",
+  "conf": 0.324,
+  "krumhansl": 0.68,
+  "temperley": 0.688,
+  "alt": "F#",
+  "alt_camelot": "2B",
+  "energy": 2.546
+ },
+ "night-tide": {
+  "key": "Dm",
+  "camelot": "7A",
+  "conf": 0.051,
+  "krumhansl": 0.567,
+  "temperley": 0.563,
+  "alt": "D",
+  "alt_camelot": "10B",
+  "energy": 3.091
+ },
+ "tribal-circuit": {
+  "key": "F#m",
+  "camelot": "11A",
+  "conf": 0.316,
+  "krumhansl": 0.63,
+  "temperley": 0.52,
+  "alt": "F#",
+  "alt_camelot": "2B",
+  "energy": 2.956
+ },
+ "afro-tech": {
+  "key": "Fm",
+  "camelot": "4A",
+  "conf": 0.226,
+  "krumhansl": 0.626,
+  "temperley": 0.421,
+  "alt": "F",
+  "alt_camelot": "7B",
+  "energy": 2.736
+ },
+ "ember-drive": {
+  "key": "A",
+  "camelot": "11B",
+  "conf": 0.319,
+  "krumhansl": 0.888,
+  "temperley": 0.842,
+  "alt": "D",
+  "alt_camelot": "10B",
+  "energy": 2.558
+ },
+ "last-light": {
+  "key": "Am",
+  "camelot": "8A",
+  "conf": 0.226,
+  "krumhansl": 0.867,
+  "temperley": 0.784,
+  "alt": "C",
+  "alt_camelot": "8B",
+  "energy": 2.578
+ }
+}

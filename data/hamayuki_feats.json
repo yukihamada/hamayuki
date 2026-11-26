@@ -1,0 +1,146 @@
+{
+ "first-ember": {
+  "low": 67.0,
+  "cent": 240,
+  "flux": 1.15,
+  "rise": 0.18
+ },
+ "sunset-drive": {
+  "low": 58.8,
+  "cent": 379,
+  "flux": 1.05,
+  "rise": 0.31
+ },
+ "horizon": {
+  "low": 63.0,
+  "cent": 389,
+  "flux": 1.03,
+  "rise": 0.15
+ },
+ "rooftop-lagos": {
+  "low": 68.1,
+  "cent": 360,
+  "flux": 1.02,
+  "rise": 0.24
+ },
+ "desert-bloom": {
+  "low": 64.7,
+  "cent": 323,
+  "flux": 1.03,
+  "rise": 0.41
+ },
+ "snow-falls-voice": {
+  "low": 55.7,
+  "cent": 277,
+  "flux": 0.97,
+  "rise": 0.1
+ },
+ "organic-afro-house": {
+  "low": 57.5,
+  "cent": 398,
+  "flux": 1.11,
+  "rise": 0.4
+ },
+ "snow-on-the-beach": {
+  "low": 58.5,
+  "cent": 287,
+  "flux": 1.06,
+  "rise": 0.06
+ },
+ "sunset-terrace": {
+  "low": 65.6,
+  "cent": 304,
+  "flux": 1.18,
+  "rise": 0.32
+ },
+ "log-drum-dawn": {
+  "low": 61.3,
+  "cent": 285,
+  "flux": 1.11,
+  "rise": 0.27
+ },
+ "trade-winds": {
+  "low": 61.1,
+  "cent": 297,
+  "flux": 0.96,
+  "rise": 0.69
+ },
+ "shoreline-glow": {
+  "low": 61.5,
+  "cent": 338,
+  "flux": 0.93,
+  "rise": 0.27
+ },
+ "deep-house-afro-intro": {
+  "low": 63.4,
+  "cent": 315,
+  "flux": 1.24,
+  "rise": 0.29
+ },
+ "tidal-turn": {
+  "low": 53.6,
+  "cent": 430,
+  "flux": 1.04,
+  "rise": 0.45
+ },
+ "kapolei-golden-hour": {
+  "low": 57.6,
+  "cent": 267,
+  "flux": 1.19,
+  "rise": 0.24
+ },
+ "lantern-festival": {
+  "low": 57.9,
+  "cent": 495,
+  "flux": 0.76,
+  "rise": 0.18
+ },
+ "blue-hour": {
+  "low": 65.8,
+  "cent": 375,
+  "flux": 1.04,
+  "rise": 0.35
+ },
+ "disco-ball-rise": {
+  "low": 66.7,
+  "cent": 428,
+  "flux": 0.89,
+  "rise": 0.3
+ },
+ "warm-rise": {
+  "low": 69.1,
+  "cent": 269,
+  "flux": 1.07,
+  "rise": 0.24
+ },
+ "night-tide": {
+  "low": 62.0,
+  "cent": 285,
+  "flux": 1.06,
+  "rise": 0.58
+ },
+ "tribal-circuit": {
+  "low": 65.2,
+  "cent": 406,
+  "flux": 1.08,
+  "rise": 0.25
+ },
+ "afro-tech": {
+  "low": 63.8,
+  "cent": 442,
+  "flux": 0.96,
+  "rise": 0.33
+ },
+ "ember-drive": {
+  "low": 65.5,
+  "cent": 289,
+  "flux": 0.89,
+  "rise": 0.14
+ },
+ "last-light": {
+  "low": 62.2,
+  "cent": 285,
+  "flux": 1.06,
+  "rise": 0.12
+ }
+}

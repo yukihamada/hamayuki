@@ -2,7 +2,9 @@
 
 HAMAYUKI (浜雪) is the DJ name of Yuki Hamada. This repository is the full making-of, from composing the tracks to publishing the page.
 
-- Listen: https://pacifica.dance/djs/hamayuki/ · https://pacifica.dance/ja/djs/hamayuki/
+![HAMAYUKI page](docs/page.png)
+
+- Listen: https://pacifica.dance/hamayuki/ · https://pacifica.dance/djs/hamayuki/ · https://pacifica.dance/ja/djs/hamayuki/
 - 日本語の説明: [下記](#日本語)
 
 ## Who did what
@@ -29,6 +31,24 @@ The 24 tracks: 11 made for HAMAYUKI (one with voice) and 13 existing tracks made
 
 At each stage we ran an independent review in the persona of a listener and of the person who decides bookings, and fixed the findings before publishing.
 
+### Rebuilding the mix (v5: second-half reorder)
+
+The published #01 is not a single pass. After listening, we measured every track (centroid, spectral flux, build/rise, low-band share) and found the second half flattened out: three bright, low-variation tracks ran together and the last ~6 minutes had no peak. The fix kept the first 16 tracks exactly as they were and re-optimised only the last 8 ([`hamayuki_order3.py`](pipeline/hamayuki_order3.py)) for a real arc — Night Tide (the strongest build) lands at ~42 min, a bright Tidal Turn gives contrast, and Last Light closes warm. Measured at the 40–46 min window: spectral flux 0.94 → 0.98, dynamics 3.3 → 3.4, and the 2-minute loudness/centroid trace now shows a clear bright→dark peak at 40–42 min.
+
+The mix is then rebuilt from the mastered PCM with the same v4 engine ([`hamayuki_master_v4.py`](pipeline/hamayuki_master_v4.py)), and the page's chapter times and waveform are regenerated from `master_report.json`.
+
+### Reproducing it
+
+```bash
+pip install -r requirements.txt          # numpy, librosa, soundfile, pyloudnorm
+# ffmpeg/ffprobe must include libmp3lame and librubberband (see requirements.txt)
+python pipeline/hamayuki_master.py       # master the 24 tracks
+python pipeline/hamayuki_keys.py         # key + energy analysis
+python pipeline/hamayuki_sections.py     # pick the most eventful ~2 min of each
+python pipeline/hamayuki_master_v4.py    # build the mix (reads hamayuki_plan_v4.json)
+python pipeline/build-hamayuki-peaks.py  # waveform data for the player
+```
+
 ### Not yet verified
 
 - A human-ear check of the few joins where automatic key detection disagreed
@@ -42,19 +62,22 @@ prompts/tracks.json   Prompts for the 11 new tracks and the synthesized voice li
 pipeline/             Mastering, analysis, mixing, page generation and waveform code (Python, ffmpeg, librosa, rubberband)
 data/                 Analysis and mastering results (keys, sections, beats, loudness)
 web/                  Waveform player (wave.js) and waveform data (peaks.json)
+docs/                 Screenshots used in this README
 ```
 
 `pipeline/` is record-keeping code that assumes the working-folder layout used at production time (e.g. `~/workspace/pacifica-dance`). The audio files themselves are not in this repository (you can listen on the page).
 
 ## License
 
-Code (`pipeline/`, `web/`): MIT. Prompts and data: CC BY 4.0. The audio is not included and is not licensed here.
+Code (`pipeline/`, `web/`): MIT — see [LICENSE](LICENSE). Prompts and data: CC BY 4.0. The audio, the voice, the name "HAMAYUKI" and the portrait are not included and are not licensed here (© Yuki Hamada / Soluna Production, all rights reserved).
 
 ## 日本語
 
 [HAMAYUKI](https://pacifica.dance/ja/djs/hamayuki/)（浜雪）は濱田優貴のDJ名義です。このリポジトリでは、曲づくりから公開ページまでの制作過程を公開しています。
 
-- 聴く: https://pacifica.dance/ja/djs/hamayuki/ ・ https://pacifica.dance/djs/hamayuki/
+![HAMAYUKIのページ](docs/page.png)
+
+- 聴く: https://pacifica.dance/hamayuki/ ・ https://pacifica.dance/ja/djs/hamayuki/ ・ https://pacifica.dance/djs/hamayuki/
 
 ### 誰が何をしたか
 
@@ -80,6 +103,24 @@ Code (`pipeline/`, `web/`): MIT. Prompts and data: CC BY 4.0. The audio is not i
 
 各段階で、聴き手・出演を決める担当者になりきった独立の評価を行い、指摘を直してから公開した。
 
+### ミックスの作り直し（v5：後半の並べ替え）
+
+公開中の #01 は一度で完成したものではない。試聴のあと全曲を測定（重心・スペクトルフラックス・立ち上がり・低域比）すると、後半が平坦になっていた。明るく変化の小さい曲が3曲続き、最後の約6分に山場がなかった。そこで前半16曲はそのまま残し、後半8曲だけを「谷→山→温かい締め」になるよう組み直した（[`hamayuki_order3.py`](pipeline/hamayuki_order3.py)）。いちばん盛り上がる Night Tide を約42分に置き、明るい Tidal Turn でコントラストを付け、Last Light で温かく締める。40〜46分の実測は、スペクトルフラックス 0.94→0.98、ダイナミクス 3.3→3.4、2分ごとの音量・重心の推移でも40〜42分に明→暗の山がはっきり出るようになった。
+
+ミックスは同じv4エンジン（[`hamayuki_master_v4.py`](pipeline/hamayuki_master_v4.py)）でマスタリング済みPCMから作り直し、ページのチャプター時刻と波形は `master_report.json` から再生成する。
+
+### 再現するには
+
+```bash
+pip install -r requirements.txt          # numpy, librosa, soundfile, pyloudnorm
+# ffmpeg/ffprobe は libmp3lame と librubberband を含むビルドが必要（requirements.txt 参照）
+python pipeline/hamayuki_master.py       # 24曲をマスタリング
+python pipeline/hamayuki_keys.py         # キーとエネルギーの解析
+python pipeline/hamayuki_sections.py     # 各曲の展開の多い約2分を選ぶ
+python pipeline/hamayuki_master_v4.py    # ミックスを組み立てる（hamayuki_plan_v4.json を読む）
+python pipeline/build-hamayuki-peaks.py  # プレーヤー用の波形データ
+```
+
 ### まだ確かめていないこと
 
 - 自動判定が割れたつなぎ目（数か所）を人の耳で聴いた確認
@@ -93,6 +134,7 @@ prompts/tracks.json   新曲11曲の指示文と、合成した声の台詞
 pipeline/             マスタリング・解析・ミックス・ページ生成・波形データのコード（Python, ffmpeg, librosa, rubberband）
 data/                 解析とマスタリングの結果（キー、区間、拍、ラウドネス）
 web/                  波形プレーヤー（wave.js）と波形データ（peaks.json）
+docs/                 このREADMEで使うスクリーンショット
 ```
 
 `pipeline/` は制作時の作業フォルダ構成（`~/workspace/pacifica-dance` など）を前提にした記録用のコードです。音源ファイル自体はこのリポジトリに含めていません（ページで聴けます）。
