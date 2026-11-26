@@ -23,12 +23,12 @@ JA = dict(
     id='HAMAYUKI', sl='hamayuki', n='HAMAYUKI', ja='浜雪', k='person', dead=False, ds=True,
     cj=['日本'], gj=['ディープ・ハウス', 'アフロ・ハウス', 'メロディック・ハウス'],
     dj='本名は濱田優貴。1983年生まれ。東京理科大学在学中にサイブリッジを共同創業し、副社長を務めた。メルカリでは2015年1月に同社初の執行役員となり、のちに取締役CPO（最高プロダクト責任者）と研究開発組織「mercari R4D」の代表を務めた。現在は別荘事業「enabler」の代表。2026年11月13日にオアフ島カポレイで開かれた音楽フェス「Zamna Hawaii 2026」では、Soluna Productionとしてブッキングと現地運営を指揮した。DJ名義のHAMAYUKIは、名字「濱田」の「濱（浜）」と、名前「優貴（ゆき）」の音をつなげたもので、「浜に降る雪」とも読める。2026年11月に名乗りはじめた。',
-    wj='作曲はAI（MUREKA）。HAMAYUKIの担当は、新曲11曲の方向づけと、24曲すべての選曲・曲順・テンポの上げ方・つなぎの組み立て。オリジナル曲24曲（うち11曲はHAMAYUKIのために作った曲で、1曲は本人の声をもとにした合成音声入り）と、自動の解析で展開の多い約2分を選んで夕暮れの順につないだ約47分のミックス「HAMAYUKI Sessions #01」を、このページで公開している。DJとしての出演歴は、まだない。夕暮れの時間帯に向けて、ディープ・ハウス、アフロ・ハウス、メロディック・ハウスを116BPMあたりから124BPMへ、途中で一度落としてから上げ直すセットを組んでいる。#01は各曲の聴きどころを集めた約47分の版。今後も、夕暮れのミックスを月1本を目標に公開する予定。',
+    wj='作曲はAI（MUREKA）。HAMAYUKIの担当は、新曲11曲の方向づけと、24曲すべての選曲・曲順・テンポの上げ方・つなぎの組み立て。オリジナル曲24曲（うち11曲はHAMAYUKIのために作った曲で、1曲は本人の声をもとにした合成音声入り）と、自動の解析で展開の多い約2分を選んで夕暮れの順につないだ約46分のミックス「HAMAYUKI Sessions #01」を、このページで公開している。DJとしての出演歴は、まだない。夕暮れの時間帯に向けて、ディープ・ハウス、アフロ・ハウス、メロディック・ハウスを116BPMあたりから124BPMへ、途中で一度落としてから上げ直すセットを組んでいる。#01は各曲の聴きどころを集めた約46分の版。今後も、夕暮れのミックスを月1本を目標に公開する予定。',
     s=SRC,
 )
 EN = dict(JA, ja='', cj=None, ce=['Japan'], ge=['Deep house', 'Afro house', 'Melodic house'],
     de='Real name Yuki Hamada, born 1983. While studying at Tokyo University of Science he co-founded CYBRiDGE and served as its vice president. At Mercari he became the company’s first executive officer in January 2015, and later its director and CPO (chief product officer) and head of the research organization mercari R4D. He now heads the vacation-home company enabler. At Zamna Hawaii 2026, a music festival held in Kapolei, Oahu, on November 13, 2026, he led booking and local operations through Soluna Production. The DJ name HAMAYUKI joins “Hama” from his family name Hamada (hama means “beach”) with his given name Yuki, a sound that also means “snow” in Japanese, so it can be read as “snow on the beach”. He started using it in November 2026.',
-    we='The music is composed by AI (MUREKA). HAMAYUKI directed the 11 new tracks and handled the selection, order, tempo ramp and transitions for all 24. On this page he has published the 24 original tracks (11 made for HAMAYUKI, one with a synthesized voice based on his own) and a 47-minute mix, “HAMAYUKI Sessions #01”, that joins the roughly two minutes of each that an automatic analysis rated most eventful, in sunset order. No past DJ bookings yet. His set is built for the sunset slot: deep, afro and melodic house that rises from about 116 to 124 BPM, with one dip mid-set. #01 is a 47-minute set of highlights; he plans to keep publishing a sunset mix, aiming for one a month.',
+    we='The music is composed by AI (MUREKA). HAMAYUKI directed the 11 new tracks and handled the selection, order, tempo ramp and transitions for all 24. On this page he has published the 24 original tracks (11 made for HAMAYUKI, one with a synthesized voice based on his own) and a 46-minute mix, “HAMAYUKI Sessions #01”, that joins the roughly two minutes of each that an automatic analysis rated most eventful, in sunset order. No past DJ bookings yet. His set is built for the sunset slot: deep, afro and melodic house that rises from about 116 to 124 BPM, with one dip mid-set. #01 is a 46-minute set of highlights; he plans to keep publishing a sunset mix, aiming for one a month.',
     s=SRC_EN)
 
 PICKS = [('Can You Feel It', 'Mr. Fingers', '1986'), ('Superman (feat. Bucie)', 'Black Coffee', '2009'),
@@ -44,8 +44,8 @@ BOOK = {
     'ja': '<section class="djcta" aria-labelledby="djcta-h"><div class="djc-txt"><h2 class="djc-h" id="djcta-h">HAMAYUKIの出演相談</h2><span>開演直後や夕日の時間帯のセットを、東京とホノルルを中心にお受けします。日程・会場・時間帯を添えて、HAMAYUKIのページの窓口からご連絡ください。</span></div><a class="djc-btn" href="/hamayuki/#h-book">HAMAYUKIに出演を相談する</a></section>',
     'en': '<section class="djcta" aria-labelledby="djcta-h"><div class="djc-txt"><h2 class="djc-h" id="djcta-h">Book HAMAYUKI</h2><span>Available for opening and sunset slots, mainly in Tokyo and Honolulu. Send the date, venue and time slot through the contact on the HAMAYUKI page.</span></div><a class="djc-btn" href="/hamayuki/#h-book">Ask about booking HAMAYUKI</a></section>',
 }
-DESC = {'ja': '浜雪（HAMAYUKI）の経歴と、夕暮れのセット。AI作曲ツールで作ったオリジナル曲24曲と、約47分のミックスをこのページで聴ける。',
-        'en': 'HAMAYUKI: background and sunset set. 24 original tracks made with an AI music tool and a 47-minute mix, playable on this page.'}
+DESC = {'ja': '浜雪（HAMAYUKI）の経歴と、夕暮れのセット。AI作曲ツールで作ったオリジナル曲24曲と、約46分のミックスをこのページで聴ける。',
+        'en': 'HAMAYUKI: background and sunset set. 24 original tracks made with an AI music tool and a 46-minute mix, playable on this page.'}
 LIC = {'ja': '文章は、上の出典（記事・公式サイト）をもとにPACIFICA編集部がまとめたものです。',
        'en': 'Written by the PACIFICA editors from the sources above (articles and official sites).'}
 
